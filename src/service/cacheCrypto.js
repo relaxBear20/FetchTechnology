@@ -7,9 +7,7 @@ const API_KEY = process.env.API_KEY || '';
 async function updateCoinList() {
     try {
         console.log("run interval to update coin list")
-        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/list`, {
-            headers: { x_cg_demo_api_key: API_KEY }
-        });
+        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/list`,);
         cache.set('coinList', response.data);
     } catch (error) {
         console.log('error ' + error)

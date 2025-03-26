@@ -1,5 +1,6 @@
 const express = require("express")
 const userRouter = require('./src/routes/crypto')
+const PORT = process.env.PORT || 3000
 const app = express()
 //Luon luon de tren dau middleware
 //Theem de doc json
